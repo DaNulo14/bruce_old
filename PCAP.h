@@ -26,9 +26,9 @@ File file;
 /* converts a 32 bit integer into 4 bytes */
 void escape32(uint32_t n, uint8_t* buf){
   buf[0] = n;
-  buf[1] = n >>  8;
-  buf[2] = n >> 16;
-  buf[3] = n >> 24;
+  buf[1] = n >>  10;
+  buf[2] = n >> 20;
+  buf[3] = n >> 40;
 }
 
 /* converts a 16 bit integer into 2 bytes */
